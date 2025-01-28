@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imoStore</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: linear-gradient(-45deg, #0078d7, #005cbf, #003f7f, #002244);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
+        }
+
+        /* Background Animation */
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* Bold all text */
+        body, header, p, .button, .social-button, footer {
+            font-weight: bold;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: rgba(0, 120, 215, 0.8); /* Semi-transparent header */
+            color: white;
+            padding: 30px 20px;
+            font-size: 28px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Main Content Styles */
+        p {
+            font-size: 18px;
+            margin: 30px 0;
+            color: #fff; /* White text for better contrast */
+        }
+
+        /* Rainbow Animation for Specific Text */
+        .rainbow-text {
+            background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: rainbow 3s linear infinite;
+        }
+
+        @keyframes rainbow {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent container */
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Button Styles */
+        .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            font-size: 16px;
+            color: white;
+            background-color: #0078d7;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .button:hover {
+            background-color: #005cbf;
+            transform: translateY(-2px);
+        }
+
+        /* Social Button Styles */
+        .social-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px;
+        }
+
+        .social-button img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .social-button a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            color: white;
+        }
+
+        /* Footer Styles */
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            font-size: 14px;
+            color: #fff; /* White text for better contrast */
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent footer */
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>imoStore</header>
+    <div class="container">
+        <p>
+            <span class="rainbow-text">এখান থেকে ফ্রিতে ইমু আলফা এবং ইমু সফটওয়্যার গুলো ডাউনলোড করুন</span>
+        </p>
+        
+        <!-- Download Buttons with "ইমু আলফা ওটো এডমিন" text above each button -->
+        <div>
+            <p><span class="rainbow-text">ইমু আলফা ওটো এডমিন</span></p>
+            <a href="https://google.com" class="button">Download</a>
+        </div>
+        <div>
+            <p><span class="rainbow-text">ইমু আলফা ওটো এডমিন</span></p>
+            <a href="https://google.com" class="button">Download</a>
+        </div>
+        <div>
+            <p><span class="rainbow-text">ইমু আলফা ওটো এডমিন</span></p>
+            <a href="https://google.com" class="button">Download</a>
+        </div>
+        <div>
+            <p><span class="rainbow-text">ইমু আলফা ওটো এডমিন</span></p>
+            <a href="https://google.com" class="button">Download</a>
+        </div>
+        <div>
+            <p><span class="rainbow-text">ইমু আলফা ওটো এডমিন</span></p>
+            <a href="https://google.com" class="button">Download</a>
+        </div>
+
+        <!-- YouTube and Telegram Links -->
+        <div class="social-button">
+            <a href="https://youtube.com/@reverse_with_rootx?si=sgkEneJd2Z89bk6E" class="button">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube Logo">
+                Visit YouTube Channel
+            </a>
+        </div>
+        <div class="social-button">
+            <a href="https://t.me/free_mods_by_rootx" class="button">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram Logo">
+                Join Telegram Channel
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        Developed By Engineer Mahin
+    </footer>
+</body>
+</html>
